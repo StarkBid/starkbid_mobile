@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'connect_wallet_screen.dart';
+
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
 
@@ -93,7 +95,9 @@ class OnboardingScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder:(context)=>const ConnectWalletPage ()));
+                    },
                     child: const Text(
                       'Connect Wallet',
                       style: TextStyle(
