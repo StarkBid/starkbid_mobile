@@ -7,12 +7,6 @@ import 'package:path_provider/path_provider.dart'
 import 'package:starkbid_mobile/app.dart';
 import 'package:starkbid_mobile/app_bloc_observer.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized(); 
-  await _initializeImportantResources();   
-  runApp(const App());                     
-}
-
 Future<void> _initializeImportantResources() async {
   HydratedBloc.storage = await HydratedStorage.build(
     storageDirectory: switch (kIsWeb) {
