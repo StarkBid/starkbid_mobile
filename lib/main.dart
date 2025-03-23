@@ -1,19 +1,10 @@
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter/material.dart' show WidgetsFlutterBinding, runApp;
-import 'package:hydrated_bloc/hydrated_bloc.dart'
-    show Bloc, HydratedBloc, HydratedStorage;
-import 'package:path_provider/path_provider.dart'
-    show getApplicationDocumentsDirectory;
+import 'package:flutter/material.dart' show runApp;
 import 'package:starkbid_mobile/app.dart';
-import 'package:starkbid_mobile/app_bloc_observer.dart';
 
-Future<void> _initializeImportantResources() async {
-  HydratedBloc.storage = await HydratedStorage.build(
-    storageDirectory: switch (kIsWeb) {
-      true => HydratedStorage.webStorageDirectory,
-      false => await getApplicationDocumentsDirectory(),
-    },
-  );
+void main() => _initializeImportantResources().then(
+      (_) => runApp(
+        const App(),
+      ),
+    );
 
-  Bloc.observer = const AppBlocObserver();
-}
+Future<void> _initializeImportantResources() async {}
