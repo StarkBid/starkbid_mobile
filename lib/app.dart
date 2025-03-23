@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:starkbid_mobile/core/routers/routers.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -35,9 +36,9 @@ class _AppState extends State<App> {
         theme: ThemeData(
           primarySwatch: Colors.grey,
         ),
-        // routeInformationProvider: AppRouter.router.routeInformationProvider,
-        // routeInformationParser: AppRouter.router.routeInformationParser,
-        // routerDelegate: AppRouter.router.routerDelegate,
+        routeInformationProvider: AppRouter.router.routeInformationProvider,
+        routeInformationParser: AppRouter.router.routeInformationParser,
+        routerDelegate: AppRouter.router.routerDelegate,
       ),
     );
   }
