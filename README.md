@@ -2,7 +2,7 @@
 
 ## Overview
 
-Starkbid is the first auction and collectible marketplace on the **Starknet Chain**, enabling users to trade NFT artworks, crypto collectibles, music, lyrics, and other digital assets. It offers public and exclusive invite-only auctions, ensuring low fees, fast transactions, and transparent bidding through Starknet’s scalability and security.
+Starkbid is an auction and collectible marketplace on the **Starknet Chain**, enabling users to trade NFT artworks, crypto collectibles, music, lyrics, and other digital assets. It offers public and exclusive invite-only auctions, ensuring low fees, fast transactions, and transparent bidding through Starknet’s scalability and security.
 
 Digital creators often face challenges like limited audience reach, high platform fees, and payment issues, resulting in minimal earnings. Starkbid addresses these hurdles, empowering creators with better visibility, lower fees, and a user-friendly platform to maximize their revenue and sustain their craft.
 

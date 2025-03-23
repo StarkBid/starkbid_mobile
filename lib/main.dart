@@ -1,22 +1,11 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart' show WidgetsFlutterBinding, runApp;
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart'
     show Bloc, HydratedBloc, HydratedStorage;
 import 'package:path_provider/path_provider.dart'
     show getApplicationDocumentsDirectory;
 import 'package:starkbid_mobile/app.dart';
 import 'package:starkbid_mobile/app_bloc_observer.dart';
-
-void main() => _initializeImportantResources().then(
-      (_) {
-        WidgetsFlutterBinding.ensureInitialized();
-        FlutterNativeSplash.remove();
-        runApp(
-          const App(),
-        );
-      },
-    );
 
 Future<void> _initializeImportantResources() async {
   HydratedBloc.storage = await HydratedStorage.build(
